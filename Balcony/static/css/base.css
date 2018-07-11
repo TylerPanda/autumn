@@ -4,7 +4,7 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 450;
     margin: auto;
-    width: 90%;
+    width: 80%;
 }
 
 header img{
@@ -24,7 +24,7 @@ header img{
 
 .drop-down-menu li a{
     padding: 20px;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 50px 0px;
     display: inline-block;
     text-decoration: none;
     color: rgb(105, 105, 105, 0.5);
@@ -35,7 +35,7 @@ header img{
 
 .drop-down-menu li a:hover{
     padding: 20px;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 50px 0px;
     display: inline-block;
     text-decoration: none;
     color: rgb(0, 0, 0);
