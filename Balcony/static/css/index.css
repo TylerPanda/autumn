@@ -1,0 +1,16 @@
+.index_news h1{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(230, 0, 0);
+}
+
+.index_news p{
+    text-align: center;
+}
+
+.index_news img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
