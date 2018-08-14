@@ -3,6 +3,16 @@
 {% load staticfiles %}
 <link rel="stylesheet" href="{% static "/css/index.css" %}">
 <div class="index_news">
+    <h2>登入登出測試網頁</h2>
+    {% if request.user.is_authenticated %}
+    歡迎光臨： {{ username }}
+    <p><a href="login">登出</a></p>
+    {% else %}
+    <p>您尚未登入~</p>
+    <a href="login">登入</a>
+    {% endif %}
+    <span style="color:red">{{ message }}</span>
+
     <h1> < 實體店面暫停中 ></h1>
     <p>貝歐克尼 Balcony 乾燥花/永生花</p>
     <p>店主服兵役去了， 偶爾以文字與朋友們見面， 分享生活與花，談談對於美的發現。</p>
