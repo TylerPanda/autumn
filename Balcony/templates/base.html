@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>貝歐克尼Balcony</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static "/css/base.css" %}">
+        <script src="{% static "js/jquery-3.3.1.min.js" %}" charset="utf-8"></script>
+        <script src="{% static "js/bootstrap.min.js" %}" charset="utf-8"></script>
+    </head>
+    <body>
+        <header>
+            <img src="{% static "/images/cover.jpg" %}">
+        </header>
+
+        <nav class="nav-menu">
+            <ul class="drop-down-menu">
+                <li><a href="{% url "index" %}">首頁</a></li>
+                <li><a href="{% url "courses" %}">課程</a></li>
+                <li><a href="#">乾燥花/不凋花</a></li>
+                <li><a href="#">貝歐克尼Q&A</a></li>
+                <li><a href="#">貝歐克尼的故事</a></li>
+            </ul>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <div class="icon_footer">
+                <ul>
+                    <li><a href="https://www.facebook.com/BalconyPFL/" title="貝歐克尼Balcony的Facebook" target="_blank"><img width = 30px src="{% static "/images/icon_fb.png" %}" alt="Facebook_Balcony"></a></li>
+                    <li><a href="https://www.instagram.com/balcony_pfl/" title="貝歐克尼Balcony的Instagram" target="_blank"><img width = 30px src="{% static "/images/icon_ig.png" %}" alt="Instagram_Balcony"></a></li>
+                </ul>
+            </div>
+            <div class="copyright_footer">
+                Copyright&nbsp;版權所有&nbsp;&copy;&nbsp;Balcony
+            </div>
+        </footer>
+
+    </body>
+</html>

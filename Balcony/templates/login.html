@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="" method="POST">
+    {% csrf_token %}
+
+    <label for="username">用戶名稱：</label>
+    <input type="text" name="username" value="" id="username"><br>
+    <label for="password">用戶密碼：</label>
+    <input type="text" name="password" value="" id="password"><br>
+    <input type="submit" value="登入">
+    <span style="color:red">{{ message }}</span>
+</form>
+
+
+<h2>Login</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+
+{% endblock %}
